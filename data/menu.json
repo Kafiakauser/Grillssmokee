@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Tandoori Chicken",
+    "price": 250,
+    "image": "https://i.imgur.com/9N4Hq1v.jpg",
+    "category": "Grill"
+  },
+  {
+    "id": 2,
+    "name": "Paneer Tikka",
+    "price": 200,
+    "image": "https://i.imgur.com/RZLqDdt.jpg",
+    "category": "Veg Grill"
+  },
+  {
+    "id": 3,
+    "name": "Chicken Seekh Kebab",
+    "price": 220,
+    "image": "https://i.imgur.com/xRnAj9B.jpg",
+    "category": "Grill"
+  },
+  {
+    "id": 4,
+    "name": "Malai Chaap",
+    "price": 180,
+    "image": "https://i.imgur.com/RmHZB1U.jpg",
+    "category": "Veg Grill"
+  }
+]
