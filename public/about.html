@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - The Grill</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grill | About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🔥</span>
+      <h1>The Grill</h1>
+    </div>
     <nav>
-        <div class="logo">THE GRILL</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="about.html" class="active">About</a>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
     </nav>
-    <section>
-        <h1>About Us</h1>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About <span class="highlight">The Grill</span></h2>
         <p>
-            At The Grill, tradition meets modern taste in every dish we prepare. Our team is passionate about using the finest ingredients and grilling techniques to deliver an unforgettable dining experience. Join us for the flavors and ambiance that only The Grill can offer.
+          Welcome to <b>The Grill</b> — where fire meets flavor.  
+          We specialize in smoky, handcrafted dishes that celebrate the art of grilling.  
+          From sizzling meats to charred veggies, every bite is infused with passion and perfection.
         </p>
-        <div class="about-gallery">
-            <img src="img/chefs.jpg" alt="Our Chefs">
-            <img src="img/restaurant-interior.jpg" alt="Interior">
-        </div>
-    </section>
+
+        <p>
+          Founded in 2025, The Grill began with a simple idea:  
+          bring authentic tandoor-style cooking to your plate using the freshest ingredients and bold spices.
+        </p>
+
+        <p>
+          Whether you dine in or take out, our mission is to give you a warm, flavorful experience — every time.
+        </p>
+
+        <a href="menu.html" class="btn-primary">Explore Menu</a>
+      </div>
+
+      <div class="about-image">
+        <img src="https://www.tandoorgrillny.com/assets/images/blog/may-2025.jpg" alt="The Grill kitchen" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 The Grill. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>

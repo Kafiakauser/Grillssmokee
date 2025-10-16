@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Menu - Tandoor & Grill</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grill | Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Our Menu</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="cart.html">Cart</a>
-    </nav>
+    <div class="logo">
+      <span class="logo-icon">🔥</span>
+      <h1>The Grill</h1>
+    </div>
+   <nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+  <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</nav>
+
   </header>
 
-  <div id="menu" class="container"></div>
+  <main class="page-content">
+    <h2>Our Menu</h2>
+    <p>Discover our grilled delights, from smoky starters to juicy mains.</p>
+
+    <div class="menu-container" id="menu-container">
+      <!-- Menu items dynamically loaded from JS -->
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 The Grill. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/menu.js"></script>
 </body>

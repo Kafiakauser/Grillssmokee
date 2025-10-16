@@ -3,32 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🔥 GrillSmokee | Tandoor & Grill</title>
+  <title>The Grill | Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>🔥 GrillSmokee</h1>
-    <p>Your Tandoor & Grill Destination</p>
+    <div class="logo">
+      <span class="logo-icon">🔥</span>
+      <h1>The Grill</h1>
+    </div>
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+  <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</nav>
   </header>
 
-  <main>
-    <section id="menu-section">
-      <h2>Our Signature Dishes</h2>
-      <div id="menu-container" class="menu-grid"></div>
-    </section>
-
-    <section id="cart-section">
-      <h2>Your Cart</h2>
-      <ul id="cart-list"></ul>
-      <p id="total">Total: ₹0</p>
-    </section>
-  </main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>The Grill</span></h1>
+      <p>Experience smoky flavours, grilled to perfection. Explore our menu and order your favourites.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-primary">Explore Menu</a>
+        <a href="cart.html" class="btn-secondary">View Cart</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 GrillSmokee | Made with ❤️ for FSD Project</p>
+    <p>© 2025 The Grill. All Rights Reserved.</p>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>

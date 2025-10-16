@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Tandoori Chicken",
-    "price": 250,
-    "image": "https://i.imgur.com/9N4Hq1v.jpg",
-    "category": "Grill"
+    "name": "Smoky BBQ Ribs",
+    "description": "Slow-cooked pork ribs finished with our signature smoky BBQ glaze.",
+    "price": 18.99,
+    "image": "https://howtobbqright.com/wp-content/uploads/2019/05/IMG_1877-1.jpg"
   },
   {
     "id": 2,
-    "name": "Paneer Tikka",
-    "price": 200,
-    "image": "https://i.imgur.com/RZLqDdt.jpg",
-    "category": "Veg Grill"
+    "name": "Charred Flame Burger",
+    "description": "Prime beef patty, melted cheddar, smoked onions, house sauce.",
+    "price": 12.5,
+    "image": "https://png.pngtree.com/thumb_back/fh260/background/20241213/pngtree-epic-flame-grilled-burger-explosion-image_16786429.jpg"
   },
   {
     "id": 3,
-    "name": "Chicken Seekh Kebab",
-    "price": 220,
-    "image": "https://i.imgur.com/xRnAj9B.jpg",
-    "category": "Grill"
+    "name": "Grilled Chicken Platter",
+    "description": "Marinated chicken breast, char-grilled, served with roasted veggies.",
+    "price": 13.75,
+    "image": "https://www.farmboy.ca/wp-content/uploads/2021/05/chicken-platter.jpg"
   },
   {
     "id": 4,
-    "name": "Malai Chaap",
-    "price": 180,
-    "image": "https://i.imgur.com/RmHZB1U.jpg",
-    "category": "Veg Grill"
+    "name": "Smoked Veggie Skewers",
+    "description": "Seasonal vegetables, smoked and grilled to perfection.",
+    "price": 9.5,
+    "image": "https://www.veggiessavetheday.com/wp-content/uploads/2019/05/Grilled-Veggie-Kabobs-FI-1200.jpg"
   }
 ]

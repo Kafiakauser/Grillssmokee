@@ -1,31 +1,41 @@
-// server.js
+// server.js — Express backend for The Grill
+
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000;
 
-// Serve static files from "public" folder
+// Middleware
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// API endpoint to send menu.json data
+// API route to get menu data
 app.get("/api/menu", (req, res) => {
-  const filePath = path.join(__dirname, "data", "menu.json");
-  fs.readFile(filePath, "utf8", (err, data) => {
+  const menuPath = path.join(__dirname, "data", "menu.json");
+
+  fs.readFile(menuPath, "utf-8", (err, data) => {
     if (err) {
-      return res.status(500).json({ error: "Error reading menu file" });
+      console.error("Error reading menu file:", err);
+      return res.status(500).json({ error: "Failed to load menu data" });
     }
-    res.json(JSON.parse(data));
+    try {
+      const menu = JSON.parse(data);
+      res.json(menu);
+    } catch (parseErr) {
+      console.error("Error parsing menu JSON:", parseErr);
+      res.status(500).json({ error: "Invalid menu data format" });
+    }
   });
 });
 
-// Fallback: serve index.html for root route
-app.get("/", (req, res) => {
+// Default route — serve index.html
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Start the server
+
 app.listen(PORT, () => {
-  console.log(`🔥 GrillSmokee server running at http://localhost:${PORT}`);
+  console.log(`🔥 The Grill server running at http://localhost:${PORT}`);
 });

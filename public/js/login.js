@@ -1,12 +1,25 @@
-document.getElementById('loginForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const user = document.getElementById('username').value;
-  const pass = document.getElementById('password').value;
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("login-form");
 
-  if (user === 'admin' && pass === '1234') {
-    alert('✅ Login successful!');
-    window.location.href = 'menu.html';
-  } else {
-    alert('❌ Invalid username or password!');
-  }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (username === "" || password === "") {
+      alert("Please enter both username and password.");
+      return;
+    }
+
+    // Simple demo login check
+    if (username === "admin" && password === "grill123") {
+      alert("Welcome back, Grill Master!");
+      window.location.href = "menu.html";
+    } else {
+      alert("Invalid credentials. Try again.");
+    }
+
+    form.reset();
+  });
 });

@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cart - Tandoor & Grill</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grill | Cart</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Your Cart</h1>
-    <nav>
-      <a href="menu.html">Back to Menu</a>
-    </nav>
+    <div class="logo">
+      <span class="logo-icon">🔥</span>
+      <h1>The Grill</h1>
+    </div>
+   <nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About</a>
+  <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</nav>
   </header>
 
-  <div class="container">
-    <ul id="cart-items"></ul>
-    <p><strong>Total: ₹<span id="total">0</span></strong></p>
-    <button id="checkout">Place Order</button>
-  </div>
+  <main class="page-content">
+    <h2>Your Cart</h2>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items dynamically generated -->
+    </div>
+    <div class="cart-total" id="cart-total">
+      Total: $0.00
+    </div>
+  </main>
 
-  <script src="js/main.js"></script>
+  <footer>
+    <p>© 2025 The Grill. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
 </body>
 </html>
